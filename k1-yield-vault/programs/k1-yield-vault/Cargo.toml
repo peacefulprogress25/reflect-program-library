@@ -1,0 +1,21 @@
+[package]
+name = "k1-yield-vault"
+version = "0.1.0"
+edition = "2021"
+
+authors = ["K1"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "k1_yield_vault"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
